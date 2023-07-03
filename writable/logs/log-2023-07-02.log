@@ -1,0 +1,141 @@
+INFO - 2023-07-02 20:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:37:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-02 20:38:20 --> Error connecting to the database: mysqli_sql_exception: Kan geen verbinding maken omdat de doelcomputer de verbinding actief heeft geweigerd.
+ in C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'rekenapp', 3306, '', 0)
+#1 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\rekenapp\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#4 C:\xampp\htdocs\rekenapp\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\rekenapp\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\rekenapp\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\rekenapp\app\Models\RekenModel.php(82): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\rekenapp\app\Controllers\RekenController.php(144): App\Models\RekenModel->saveScore(2, 2, Array)
+#9 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+#10 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+#11 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\rekenapp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\rekenapp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Kan geen verbinding maken omdat de doelcomputer de verbinding actief heeft geweigerd.
+ in C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rekenapp\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#3 C:\xampp\htdocs\rekenapp\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\rekenapp\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\rekenapp\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\rekenapp\app\Models\RekenModel.php(82): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\rekenapp\app\Controllers\RekenController.php(144): App\Models\RekenModel->saveScore(2, 2, Array)
+#8 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+#9 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+#10 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\rekenapp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\rekenapp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-07-02 20:38:20 --> Unable to connect to the database.
+Main connection [MySQLi]: Kan geen verbinding maken omdat de doelcomputer de verbinding actief heeft geweigerd.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `exercises` (`score`, `total`, `user_answer`) VALUES (:score:, :total:, :user_answer:)', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Models\RekenModel.php(82): CodeIgniter\Model->insert([...])
+ 7 APPPATH\Controllers\RekenController.php(144): App\Models\RekenModel->saveScore(2, 2, [...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-02 20:38:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:39:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-02 20:46:01 --> Error connecting to the database: mysqli_sql_exception: Kan geen verbinding maken omdat de doelcomputer de verbinding actief heeft geweigerd.
+ in C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'rekenapp', 3306, '', 0)
+#1 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\rekenapp\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#4 C:\xampp\htdocs\rekenapp\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\rekenapp\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\rekenapp\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\rekenapp\app\Models\RekenModel.php(82): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\rekenapp\app\Controllers\RekenController.php(144): App\Models\RekenModel->saveScore(1, 1, Array)
+#9 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+#10 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+#11 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\rekenapp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\rekenapp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Kan geen verbinding maken omdat de doelcomputer de verbinding actief heeft geweigerd.
+ in C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rekenapp\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#3 C:\xampp\htdocs\rekenapp\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\rekenapp\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\rekenapp\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\rekenapp\app\Models\RekenModel.php(82): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\rekenapp\app\Controllers\RekenController.php(144): App\Models\RekenModel->saveScore(1, 1, Array)
+#8 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+#9 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+#10 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\rekenapp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\rekenapp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-07-02 20:46:01 --> Unable to connect to the database.
+Main connection [MySQLi]: Kan geen verbinding maken omdat de doelcomputer de verbinding actief heeft geweigerd.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `exercises` (`score`, `total`, `user_answer`) VALUES (:score:, :total:, :user_answer:)', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Models\RekenModel.php(82): CodeIgniter\Model->insert([...])
+ 7 APPPATH\Controllers\RekenController.php(144): App\Models\RekenModel->saveScore(1, 1, [...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-02 20:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:49:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-02 20:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

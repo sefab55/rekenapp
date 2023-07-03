@@ -1,0 +1,568 @@
+INFO - 2023-07-01 20:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-01 20:01:57 --> Undefined variable: index
+in APPPATH\Controllers\RekenController.php on line 90.
+ 1 APPPATH\Controllers\RekenController.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: index', 'C:\\xampp\\htdocs\\rekenapp\\app\\Controllers\\RekenController.php', 90, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-01 20:06:38 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 883.
+ 1 APPPATH\Models\RekenModel.php(77): CodeIgniter\Database\BaseConnection->table(null)
+ 2 APPPATH\Controllers\RekenController.php(143): App\Models\RekenModel->saveScore(2, 2)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:09:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-01 20:09:14 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Host is onbekend.  in C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 174, Array)
+#1 C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('rekenapp', 'root', '', 'ci4', 3306, '', 0)
+#2 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\rekenapp\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#5 C:\xampp\htdocs\rekenapp\app\Models\RekenModel.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 C:\xampp\htdocs\rekenapp\app\Controllers\RekenController.php(143): App\Models\RekenModel->saveScore(2, 2)
+#7 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+#8 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+#9 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\rekenapp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\rekenapp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Host is onbekend.  in C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('rekenapp', 'root', '', 'ci4', 3306, '', 0)
+#1 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\rekenapp\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#4 C:\xampp\htdocs\rekenapp\app\Models\RekenModel.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\rekenapp\app\Controllers\RekenController.php(143): App\Models\RekenModel->saveScore(2, 2)
+#6 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+#7 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+#8 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekenapp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekenapp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Host is onbekend.  in C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rekenapp\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#3 C:\xampp\htdocs\rekenapp\app\Models\RekenModel.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\htdocs\rekenapp\app\Controllers\RekenController.php(143): App\Models\RekenModel->saveScore(2, 2)
+#5 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+#6 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+#7 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rekenapp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\rekenapp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-07-01 20:09:14 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Host is onbekend. 
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `exercises` (`score`, `total`) VALUES (:score:, :total:)', [...], false)
+ 3 APPPATH\Models\RekenModel.php(79): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 APPPATH\Controllers\RekenController.php(143): App\Models\RekenModel->saveScore(2, 2)
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+CRITICAL - 2023-07-01 20:10:03 --> Class 'CodeIgniter\Database\MySQL\Connection' not found
+in SYSTEMPATH\Database\Database.php on line 137.
+ 1 SYSTEMPATH\Database\Database.php(55): CodeIgniter\Database\Database->initDriver('MySQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\RekenController.php(13): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\RekenController->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-01 20:12:15 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Host is onbekend.  in C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 174, Array)
+#1 C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('rekenapp', 'root', '', 'ci4', 3306, '', 0)
+#2 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\rekenapp\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#5 C:\xampp\htdocs\rekenapp\app\Models\RekenModel.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 C:\xampp\htdocs\rekenapp\app\Controllers\RekenController.php(143): App\Models\RekenModel->saveScore(2, 2)
+#7 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+#8 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+#9 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\rekenapp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\rekenapp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Host is onbekend.  in C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('rekenapp', 'root', '', 'ci4', 3306, '', 0)
+#1 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\rekenapp\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#4 C:\xampp\htdocs\rekenapp\app\Models\RekenModel.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\rekenapp\app\Controllers\RekenController.php(143): App\Models\RekenModel->saveScore(2, 2)
+#6 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+#7 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+#8 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekenapp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekenapp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Host is onbekend.  in C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rekenapp\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#3 C:\xampp\htdocs\rekenapp\app\Models\RekenModel.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\htdocs\rekenapp\app\Controllers\RekenController.php(143): App\Models\RekenModel->saveScore(2, 2)
+#5 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+#6 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+#7 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rekenapp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\rekenapp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-07-01 20:12:15 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Host is onbekend. 
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `exercises` (`score`, `total`) VALUES (:score:, :total:)', [...], false)
+ 3 APPPATH\Models\RekenModel.php(79): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 APPPATH\Controllers\RekenController.php(143): App\Models\RekenModel->saveScore(2, 2)
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+CRITICAL - 2023-07-01 20:12:27 --> Class 'CodeIgniter\Database\MySQL\Connection' not found
+in SYSTEMPATH\Database\Database.php on line 137.
+ 1 SYSTEMPATH\Database\Database.php(55): CodeIgniter\Database\Database->initDriver('MySQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\RekenController.php(13): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\RekenController->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+CRITICAL - 2023-07-01 20:14:51 --> Class 'CodeIgniter\Database\MySQL\Connection' not found
+in SYSTEMPATH\Database\Database.php on line 137.
+ 1 SYSTEMPATH\Database\Database.php(55): CodeIgniter\Database\Database->initDriver('MySQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\RekenController.php(13): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\RekenController->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-01 20:15:09 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: Host is onbekend.  in C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 174, Array)
+#1 C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('rekenapp', 'root', '', 'ci4', 3306, '', 0)
+#2 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\rekenapp\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#5 C:\xampp\htdocs\rekenapp\app\Models\RekenModel.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 C:\xampp\htdocs\rekenapp\app\Controllers\RekenController.php(143): App\Models\RekenModel->saveScore(2, 2)
+#7 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+#8 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+#9 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\rekenapp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\rekenapp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo failed: Host is onbekend.  in C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('rekenapp', 'root', '', 'ci4', 3306, '', 0)
+#1 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\rekenapp\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#4 C:\xampp\htdocs\rekenapp\app\Models\RekenModel.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\rekenapp\app\Controllers\RekenController.php(143): App\Models\RekenModel->saveScore(2, 2)
+#6 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+#7 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+#8 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekenapp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekenapp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo failed: Host is onbekend.  in C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\rekenapp\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#3 C:\xampp\htdocs\rekenapp\app\Models\RekenModel.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\htdocs\rekenapp\app\Controllers\RekenController.php(143): App\Models\RekenModel->saveScore(2, 2)
+#5 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+#6 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+#7 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\rekenapp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\rekenapp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-07-01 20:15:09 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Host is onbekend. 
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `exercises` (`score`, `total`) VALUES (:score:, :total:)', [...], false)
+ 3 APPPATH\Models\RekenModel.php(79): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 APPPATH\Controllers\RekenController.php(143): App\Models\RekenModel->saveScore(2, 2)
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-01 20:16:47 --> mysqli_sql_exception: Unknown column 'score' in 'field list' in C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ex...', 0)
+#1 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ex...')
+#2 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ex...')
+#3 C:\xampp\htdocs\rekenapp\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#4 C:\xampp\htdocs\rekenapp\app\Models\RekenModel.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\rekenapp\app\Controllers\RekenController.php(143): App\Models\RekenModel->saveScore(2, 2)
+#6 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+#7 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+#8 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekenapp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekenapp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-07-01 20:16:47 --> Unknown column 'score' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `exercises` (`score`, `total`) VALUES (2, 2)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `exercises` (`score`, `total`) VALUES (2, 2)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `exercises` (`score`, `total`) VALUES (2, 2)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `exercises` (`score`, `total`) VALUES (:score:, :total:)', [...], false)
+ 5 APPPATH\Models\RekenModel.php(79): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\RekenController.php(143): App\Models\RekenModel->saveScore(2, 2)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-01 20:18:20 --> mysqli_sql_exception: Unknown column 'total' in 'field list' in C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ex...', 0)
+#1 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ex...')
+#2 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ex...')
+#3 C:\xampp\htdocs\rekenapp\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#4 C:\xampp\htdocs\rekenapp\app\Models\RekenModel.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\rekenapp\app\Controllers\RekenController.php(143): App\Models\RekenModel->saveScore(2, 2)
+#6 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+#7 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+#8 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekenapp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekenapp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-07-01 20:18:20 --> Unknown column 'total' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `exercises` (`score`, `total`) VALUES (2, 2)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `exercises` (`score`, `total`) VALUES (2, 2)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `exercises` (`score`, `total`) VALUES (2, 2)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `exercises` (`score`, `total`) VALUES (:score:, :total:)', [...], false)
+ 5 APPPATH\Models\RekenModel.php(79): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\RekenController.php(143): App\Models\RekenModel->saveScore(2, 2)
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-01 20:25:58 --> Undefined variable: user_Answer
+in APPPATH\Models\RekenModel.php on line 77.
+ 1 APPPATH\Models\RekenModel.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user_Answer', 'C:\\xampp\\htdocs\\rekenapp\\app\\Models\\RekenModel.php', 77, [...])
+ 2 APPPATH\Controllers\RekenController.php(143): App\Models\RekenModel->saveScore(3, 5, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-01 20:26:34 --> Undefined variable: user_answer
+in APPPATH\Models\RekenModel.php on line 77.
+ 1 APPPATH\Models\RekenModel.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user_answer', 'C:\\xampp\\htdocs\\rekenapp\\app\\Models\\RekenModel.php', 77, [...])
+ 2 APPPATH\Controllers\RekenController.php(143): App\Models\RekenModel->saveScore(3, 5, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:27:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-01 20:27:08 --> Undefined variable: user_answer
+in APPPATH\Models\RekenModel.php on line 77.
+ 1 APPPATH\Models\RekenModel.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user_answer', 'C:\\xampp\\htdocs\\rekenapp\\app\\Models\\RekenModel.php', 77, [...])
+ 2 APPPATH\Controllers\RekenController.php(143): App\Models\RekenModel->saveScore(3, 5, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-01 20:28:13 --> Undefined variable: user_answer
+in APPPATH\Models\RekenModel.php on line 77.
+ 1 APPPATH\Models\RekenModel.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user_answer', 'C:\\xampp\\htdocs\\rekenapp\\app\\Models\\RekenModel.php', 77, [...])
+ 2 APPPATH\Controllers\RekenController.php(144): App\Models\RekenModel->saveScore(3, 5, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-01 20:28:45 --> Undefined variable: user_answer
+in APPPATH\Models\RekenModel.php on line 77.
+ 1 APPPATH\Models\RekenModel.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user_answer', 'C:\\xampp\\htdocs\\rekenapp\\app\\Models\\RekenModel.php', 77, [...])
+ 2 APPPATH\Controllers\RekenController.php(144): App\Models\RekenModel->saveScore(3, 5, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-01 20:29:19 --> Undefined variable: user_answer
+in APPPATH\Controllers\RekenController.php on line 144.
+ 1 APPPATH\Controllers\RekenController.php(144): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user_answer', 'C:\\xampp\\htdocs\\rekenapp\\app\\Controllers\\RekenController.php', 144, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:30:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-01 20:30:04 --> Undefined variable: user_answer
+in APPPATH\Models\RekenModel.php on line 77.
+ 1 APPPATH\Models\RekenModel.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user_answer', 'C:\\xampp\\htdocs\\rekenapp\\app\\Models\\RekenModel.php', 77, [...])
+ 2 APPPATH\Controllers\RekenController.php(144): App\Models\RekenModel->saveScore(3, 5)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-01 20:30:57 --> Undefined variable: user_answer
+in APPPATH\Controllers\RekenController.php on line 144.
+ 1 APPPATH\Controllers\RekenController.php(144): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user_answer', 'C:\\xampp\\htdocs\\rekenapp\\app\\Controllers\\RekenController.php', 144, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-01 20:32:30 --> Undefined variable: user_answer
+in APPPATH\Controllers\RekenController.php on line 144.
+ 1 APPPATH\Controllers\RekenController.php(144): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user_answer', 'C:\\xampp\\htdocs\\rekenapp\\app\\Controllers\\RekenController.php', 144, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-01 20:33:43 --> Allowed fields must be specified for model: "App\Models\RekenModel"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\RekenModel')
+ 2 SYSTEMPATH\BaseModel.php(757): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Models\RekenModel.php(80): CodeIgniter\Model->insert([...])
+ 5 APPPATH\Controllers\RekenController.php(144): App\Models\RekenModel->saveScore(3, 5, [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-01 20:34:37 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ex...', 0)
+#1 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ex...')
+#2 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ex...')
+#3 C:\xampp\htdocs\rekenapp\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#4 C:\xampp\htdocs\rekenapp\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\rekenapp\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\rekenapp\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\rekenapp\app\Models\RekenModel.php(81): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\rekenapp\app\Controllers\RekenController.php(144): App\Models\RekenModel->saveScore(3, 5, Array)
+#9 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+#10 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+#11 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\rekenapp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\rekenapp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-07-01 20:34:37 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `exercises` (`score`, `total`, `user_answer`) VALUES (3, 5, (\'113\',\'121\',\'98\',\'149\',\'166\'))', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `exercises` (`score`, `total`, `user_answer`) VALUES (3, 5, (\'113\',\'121\',\'98\',\'149\',\'166\'))')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `exercises` (`score`, `total`, `user_answer`) VALUES (3, 5, (\'113\',\'121\',\'98\',\'149\',\'166\'))')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `exercises` (`score`, `total`, `user_answer`) VALUES (:score:, :total:, :user_answer:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\RekenModel.php(81): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\RekenController.php(144): App\Models\RekenModel->saveScore(3, 5, [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-01 20:35:18 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ex...', 0)
+#1 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ex...')
+#2 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ex...')
+#3 C:\xampp\htdocs\rekenapp\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#4 C:\xampp\htdocs\rekenapp\app\Models\RekenModel.php(81): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\rekenapp\app\Controllers\RekenController.php(144): App\Models\RekenModel->saveScore(3, 5, Array)
+#6 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+#7 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+#8 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rekenapp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\rekenapp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-07-01 20:35:18 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `exercises` (`score`, `total`, `user_answer`) VALUES (3, 5, (\'113\',\'121\',\'98\',\'149\',\'166\'))', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `exercises` (`score`, `total`, `user_answer`) VALUES (3, 5, (\'113\',\'121\',\'98\',\'149\',\'166\'))')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `exercises` (`score`, `total`, `user_answer`) VALUES (3, 5, (\'113\',\'121\',\'98\',\'149\',\'166\'))')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `exercises` (`score`, `total`, `user_answer`) VALUES (:score:, :total:, :user_answer:)', [...], false)
+ 5 APPPATH\Models\RekenModel.php(81): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\RekenController.php(144): App\Models\RekenModel->saveScore(3, 5, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:35:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-01 20:35:58 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ex...', 0)
+#1 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ex...')
+#2 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ex...')
+#3 C:\xampp\htdocs\rekenapp\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#4 C:\xampp\htdocs\rekenapp\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\rekenapp\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\rekenapp\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\rekenapp\app\Models\RekenModel.php(81): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\rekenapp\app\Controllers\RekenController.php(144): App\Models\RekenModel->saveScore(3, 3, Array)
+#9 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+#10 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+#11 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\rekenapp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\rekenapp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-07-01 20:35:58 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `exercises` (`score`, `total`, `user_answer`) VALUES (3, 3, (\'99\',\'140\',\'101\'))', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `exercises` (`score`, `total`, `user_answer`) VALUES (3, 3, (\'99\',\'140\',\'101\'))')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `exercises` (`score`, `total`, `user_answer`) VALUES (3, 3, (\'99\',\'140\',\'101\'))')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `exercises` (`score`, `total`, `user_answer`) VALUES (:score:, :total:, :user_answer:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\RekenModel.php(81): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\RekenController.php(144): App\Models\RekenModel->saveScore(3, 3, [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-01 20:38:07 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\rekenapp\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ex...', 0)
+#1 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ex...')
+#2 C:\xampp\htdocs\rekenapp\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ex...')
+#3 C:\xampp\htdocs\rekenapp\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ex...', Array, false)
+#4 C:\xampp\htdocs\rekenapp\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\rekenapp\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\rekenapp\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\rekenapp\app\Models\RekenModel.php(83): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\rekenapp\app\Controllers\RekenController.php(144): App\Models\RekenModel->saveScore(3, 3, Array)
+#9 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+#10 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+#11 C:\xampp\htdocs\rekenapp\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\rekenapp\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\rekenapp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-07-01 20:38:07 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `exercises` (`score`, `total`, `user_answer`) VALUES (3, 3, (\'99\',\'140\',\'101\'))', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `exercises` (`score`, `total`, `user_answer`) VALUES (3, 3, (\'99\',\'140\',\'101\'))')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `exercises` (`score`, `total`, `user_answer`) VALUES (3, 3, (\'99\',\'140\',\'101\'))')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `exercises` (`score`, `total`, `user_answer`) VALUES (:score:, :total:, :user_answer:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\RekenModel.php(83): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\RekenController.php(144): App\Models\RekenModel->saveScore(3, 3, [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:39:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-01 20:39:16 --> Allowed fields must be specified for model: "App\Models\RekenModel"
+in SYSTEMPATH\BaseModel.php on line 1242.
+ 1 SYSTEMPATH\BaseModel.php(1242): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\RekenModel')
+ 2 SYSTEMPATH\BaseModel.php(757): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Models\RekenModel.php(81): CodeIgniter\Model->insert([...])
+ 5 APPPATH\Controllers\RekenController.php(144): App\Models\RekenModel->saveScore(3, 3, [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->controleerAntwoorden()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-01 20:40:27 --> syntax error, unexpected ''user_answer'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+in APPPATH\Models\RekenModel.php on line 80.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rekenapp\\app\\Models\\RekenModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\RekenModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\RekenModel')
+ 4 APPPATH\Controllers\RekenController.php(13): spl_autoload_call('App\\Models\\RekenModel')
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\RekenController->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-07-01 20:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-01 20:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

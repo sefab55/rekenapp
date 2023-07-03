@@ -1,0 +1,723 @@
+CRITICAL - 2023-06-27 22:30:41 --> Class 'CI_Controller' not found
+in APPPATH\Controllers\RekenController.php on line 2.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rekenapp\\app\\Controllers\\RekenController.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\RekenController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\RekenController')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\RekenController')
+ 6 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\RekenController', true)
+ 7 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+CRITICAL - 2023-06-27 22:33:40 --> Class 'App\Controllers\CI_Controller' not found
+in APPPATH\Controllers\RekenController.php on line 5.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\rekenapp\\app\\Controllers\\RekenController.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\RekenController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\RekenController')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\RekenController')
+ 6 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\RekenController', true)
+ 7 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+CRITICAL - 2023-06-27 22:34:00 --> Cannot call constructor
+in APPPATH\Controllers\RekenController.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\RekenController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 22:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 22:47:14 --> Invalid file: "kies_aantal_sommen.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kies_aantal_sommen.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kies_aantal_sommen', [], true)
+ 3 APPPATH\Controllers\RekenController.php(43): view('kies_aantal_sommen')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->kiesAantalSommen()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+CRITICAL - 2023-06-27 22:47:14 --> Invalid file: "kies_aantal_sommen.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kies_aantal_sommen.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kies_aantal_sommen', [], true)
+ 3 APPPATH\Controllers\RekenController.php(43): view('kies_aantal_sommen')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->kiesAantalSommen()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 22:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 22:50:40 --> Invalid argument supplied for foreach()
+in APPPATH\Views\rekenapplicatie.php on line 33.
+ 1 APPPATH\Views\rekenapplicatie.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\rekenapplicatie.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\rekenapplicatie.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Rekenapplicatie', [], true)
+ 5 APPPATH\Controllers\RekenController.php(70): view('Rekenapplicatie', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->oefenSommen()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 22:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:51:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:51:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:54:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:54:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 22:56:31 --> Class 'Config\Route' not found
+in APPPATH\Config\Routes.php on line 23.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+CRITICAL - 2023-06-27 22:56:44 --> Class 'Config\Route' not found
+in APPPATH\Config\Routes.php on line 23.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 22:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 22:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:07:56 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:08:56 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:08:57 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:10:35 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:10:36 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:10:36 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:10:36 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:13:17 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:13:17 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:13:18 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:14:02 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:14:07 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:15:46 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:15:46 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:15:59 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:15:59 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:15:59 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:16:00 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:16:00 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:17:25 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:17:26 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:17:26 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:20:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:20:42 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:20:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:20:42 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:20:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:20:43 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:20:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:20:43 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:23:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:23:17 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(92): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:23:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:23:17 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(92): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:23:18 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(92): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:23:18 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(92): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:23:54 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(92): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:25:12 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(92): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:25:13 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(92): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:25:28 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(92): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:25:36 --> Undefined index: operator
+in APPPATH\Views\beantwoordpagina.php on line 3.
+ 1 APPPATH\Views\beantwoordpagina.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\beantwoordpagina.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('beantwoordpagina', [], true)
+ 5 APPPATH\Controllers\RekenController.php(92): view('beantwoordpagina', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:49:58 --> Undefined variable: sommen
+in APPPATH\Views\rekenapplicatie.php on line 33.
+ 1 APPPATH\Views\rekenapplicatie.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: sommen', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\rekenapplicatie.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\rekenapplicatie.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Rekenapplicatie', [], true)
+ 5 APPPATH\Controllers\RekenController.php(88): view('Rekenapplicatie', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:55:04 --> Undefined variable: sommen
+in APPPATH\Views\rekenapplicatie.php on line 33.
+ 1 APPPATH\Views\rekenapplicatie.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: sommen', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\rekenapplicatie.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\rekenapplicatie.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Rekenapplicatie', [], true)
+ 5 APPPATH\Controllers\RekenController.php(87): view('Rekenapplicatie', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:55:41 --> Undefined index: operator
+in APPPATH\Views\rekenapplicatie.php on line 34.
+ 1 APPPATH\Views\rekenapplicatie.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\rekenapplicatie.php', 34, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\rekenapplicatie.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Rekenapplicatie', [], true)
+ 5 APPPATH\Controllers\RekenController.php(87): view('Rekenapplicatie', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:56:13 --> Undefined index: operator
+in APPPATH\Views\rekenapplicatie.php on line 34.
+ 1 APPPATH\Views\rekenapplicatie.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\rekenapplicatie.php', 34, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\rekenapplicatie.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Rekenapplicatie', [], true)
+ 5 APPPATH\Controllers\RekenController.php(87): view('Rekenapplicatie', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:56:14 --> Undefined index: operator
+in APPPATH\Views\rekenapplicatie.php on line 34.
+ 1 APPPATH\Views\rekenapplicatie.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\rekenapplicatie.php', 34, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\rekenapplicatie.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Rekenapplicatie', [], true)
+ 5 APPPATH\Controllers\RekenController.php(87): view('Rekenapplicatie', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:56:14 --> Undefined index: operator
+in APPPATH\Views\rekenapplicatie.php on line 34.
+ 1 APPPATH\Views\rekenapplicatie.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\rekenapplicatie.php', 34, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\rekenapplicatie.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Rekenapplicatie', [], true)
+ 5 APPPATH\Controllers\RekenController.php(87): view('Rekenapplicatie', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-27 23:56:14 --> Undefined index: operator
+in APPPATH\Views\rekenapplicatie.php on line 34.
+ 1 APPPATH\Views\rekenapplicatie.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: operator', 'C:\\xampp\\htdocs\\rekenapp\\app\\Views\\rekenapplicatie.php', 34, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\rekenapp\\app\\Views\\rekenapplicatie.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Rekenapplicatie', [], true)
+ 5 APPPATH\Controllers\RekenController.php(87): view('Rekenapplicatie', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\RekenController->beantwoordSommen('0')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RekenController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\rekenapp\\public\\index.php')
+INFO - 2023-06-27 23:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-27 23:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
